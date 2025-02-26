@@ -56,7 +56,7 @@ namespace BankBackend.Controllers
                 //Return error messages if creation failed
                 return BadRequest(result.Errors);
             }
-            return Created();
+            return StatusCode(201);
         }
 
         [HttpPost("login")]
